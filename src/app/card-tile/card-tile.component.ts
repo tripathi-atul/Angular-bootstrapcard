@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { CardObject } from '../card-object';
 
 @Component({
   selector: 'app-card-tile',
@@ -7,9 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardTileComponent implements OnInit {
 
-  @Input() cardtitle: string;
-  @Input() iambutton: string;
-
+  @Input() post: CardObject;
   constructor() { }
 
   ngOnInit(): void {

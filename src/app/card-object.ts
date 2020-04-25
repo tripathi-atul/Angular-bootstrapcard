@@ -1,11 +1,11 @@
 export class CardObject {
 
     cardtitle: string;
-    cardtext: string;
+    iambutton: string;
 
-    constructor(cardtitle: string, cardtext: string) {
+    constructor(cardtitle: string, iambutton: string) {
         this.cardtitle = cardtitle;
-        this.cardtext = cardtext;
+        this.iambutton = iambutton;
     }
 
 }

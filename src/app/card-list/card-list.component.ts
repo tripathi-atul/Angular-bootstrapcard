@@ -14,10 +14,10 @@ export class CardListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.cardList= [
-      new CardObject('first','first'),
-      new CardObject('second','second')
-    ];
+    this.cardList.push(
+      new CardObject('first','first'));
+      this.cardList.push(new CardObject('second','second'));
+    
 
   }
 
