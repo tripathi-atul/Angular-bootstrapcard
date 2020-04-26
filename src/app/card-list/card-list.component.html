@@ -1,6 +1,8 @@
 <app-card-tile
-    *ngFor="let post of cardList"
+    *ngFor="let post of cardList[currentPage]"
     [post]="post">
 </app-card-tile>
+<app-page [numberOfPages]='cardList.length' (pageNumberClick)='updateCurrentPage($event)'></app-page>
+
 
 

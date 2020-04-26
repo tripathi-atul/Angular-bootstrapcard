@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CardTileComponent } from './card-tile/card-tile.component';
 import { CardListComponent } from './card-list/card-list.component';
 import { TruncatePipe } from './truncate.pipe';
+import { PageComponent } from './page/page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardTileComponent,
     CardListComponent,
-    TruncatePipe
+    TruncatePipe,
+    PageComponent
   ],
   imports: [
     BrowserModule,

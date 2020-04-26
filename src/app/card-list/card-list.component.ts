@@ -8,16 +8,57 @@ import { CardObject } from '../card-object';
 })
 export class CardListComponent implements OnInit {
 
-  cardList: CardObject[] =[];
+  cardList: CardObject[][];
+  currentPage: number;
   
 
   constructor() { }
 
   ngOnInit(): void {
-    this.cardList.push(
-      new CardObject('first','first'));
-      this.cardList.push(new CardObject("Miusov, as a man man of breeding and deilcacy, could not but feel some inwrd qualms, when he reached the Father Superior's with Ivan: he felt ashamed of havin lost his temper. He felt that he ought to have disdaimed that despicable wretch, Fyodor Pavlovitch, too much to have been upset by him in Father Zossima's cell, and so to have forgotten himself. Teh monks were not to blame, in any case, he reflceted, on the steps",'second'));
-    
+    this.currentPage = 0;
+
+    this.cardList = [
+      [
+        {
+          cardtitle:'first',iambutton:'first'
+        },
+        {
+          cardtitle:'second',iambutton:'second'
+        },
+        {
+          cardtitle:'third',iambutton:'third'
+        },
+        {
+          cardtitle:'fourth',iambutton:'fourth'
+        },
+
+      ],
+      [
+        {
+          cardtitle:'fifth',iambutton:'fifth'
+        },
+        {
+          cardtitle:'sixth',iambutton:'sixth'
+        },
+        {
+          cardtitle:'seventh',iambutton:'seventh'
+        },
+
+      ],
+      [
+        {
+          cardtitle:'eighth',iambutton:'eighth'
+        },
+        {
+          cardtitle:'ninth',iambutton:'ninth'
+        },
+      ]
+    ];
+
+  }
+
+  updateCurrentPage(pageNumber) {
+    this.currentPage = pageNumber;
 
   }
 
