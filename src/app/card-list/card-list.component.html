@@ -1,3 +1,6 @@
-<app-card-tile [post]="cardList[0]"></app-card-tile>
+<app-card-tile
+    *ngFor="let post of cardList"
+    [post]="post">
+</app-card-tile>
 
 
